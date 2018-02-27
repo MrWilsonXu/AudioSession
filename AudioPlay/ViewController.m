@@ -13,16 +13,16 @@
 #import <AVFoundation/AVFoundation.h>
 
 typedef NS_ENUM(NSUInteger, VoicePlayState){
-    VoicePlayStateNone = 0,     // 默认状态
-    VoicePlayStateLoding = 1,   // 加载中
-    VoicePlayStateReady = 2,    // 准备播放
-    VoicePlayStateBuffering = 3,// 缓冲中
-    VoicePlayStateBufferEnd = 4,// 缓冲结束
-    VoicePlayStatePlaying = 5,  // 正在播放
-    VoicePlayStateSuspend = 6,  // 暂停
-    VoicePlayStateStop = 7,     // 停止播放
-    VoicePlayStateFinish = 8,   // 完成播放
-    VoicePlayStateError = 9,    // 播放错误
+    VoicePlayStateNone = 0,
+    VoicePlayStateLoding = 1,
+    VoicePlayStateReady = 2,
+    VoicePlayStateBuffering = 3,
+    VoicePlayStateBufferEnd = 4,
+    VoicePlayStatePlaying = 5,
+    VoicePlayStateSuspend = 6,
+    VoicePlayStateStop = 7,
+    VoicePlayStateFinish = 8,
+    VoicePlayStateError = 9
 };
 
 @interface ViewController ()
@@ -48,6 +48,21 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initAudioPlay];
+    [self customAddNotification];
+}
+
+- (void)customAddNotification {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(audioRouteChangeListenerCallback:)
+                                                 name:AVAudioSessionRouteChangeNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(otherAppAudioSessionCallBack:)
+                                                 name:AVAudioSessionSilenceSecondaryAudioHintNotification object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(systermAudioSessionCallBack:)
+                                                 name:AVAudioSessionInterruptionNotification object:nil];
 }
 
 - (void)initAudioPlay {
@@ -107,9 +122,10 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
 /**
  *  SetAVAudioSessionCategory
  */
-- (void)setAVAudioSessionCategory:(NSString *)category {
+- (void)setAVAudioSessionCategory:(NSString *)category
+                          options:(AVAudioSessionCategoryOptions)options {
     NSError *error = nil;
-    BOOL success = [[AVAudioSession sharedInstance] setCategory:category error:&error];
+    BOOL success = [[AVAudioSession sharedInstance] setCategory:category withOptions:options error:&error];
     
     if (!success) {
         NSLog(@"SetCategory error：%@ ",error.description);
@@ -153,6 +169,75 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
     [self.playAction setTitle:text forState:UIControlStateNormal];
 }
 
+#pragma mark - 监听 插／拔耳机
+
+- (void)audioRouteChangeListenerCallback:(NSNotification*)notification {
+    NSDictionary *interuptionDict = notification.userInfo;
+    NSInteger routeChangeReason = [[interuptionDict valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
+    
+    // AVAudioSessionRouteChangeReasonKey：change reason
+    
+    switch (routeChangeReason) {
+            // new device available
+        case AVAudioSessionRouteChangeReasonNewDeviceAvailable:{
+            NSLog(@"headset input");
+            break;
+        }
+            // device unavailable
+        case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:{
+            NSLog(@"pause play when headset output");
+            [self.avPlayer pause];
+            break;
+        }
+        case AVAudioSessionRouteChangeReasonCategoryChange:
+            // called at start - also when other audio wants to play
+            NSLog(@"AVAudioSessionRouteChangeReasonCategoryChange");
+            break;
+    }
+}
+
+#pragma mark - 监听音频系统中断响应
+
+- (void)otherAppAudioSessionCallBack:(NSNotification *)notification {
+    NSDictionary *interuptionDict = notification.userInfo;
+    NSInteger interuptType = [[interuptionDict valueForKey:AVAudioSessionSilenceSecondaryAudioHintTypeKey] integerValue];
+    
+    switch (interuptType) {
+        case AVAudioSessionSilenceSecondaryAudioHintTypeBegin:{
+            [self.avPlayer pause];
+            NSLog(@"pause play when other app occupied session");
+            break;
+        }
+        case AVAudioSessionSilenceSecondaryAudioHintTypeEnd:{
+            NSLog(@"occupied session");
+            break;
+        }
+        default:
+            break;
+    }
+}
+
+// phone call or alarm
+- (void)systermAudioSessionCallBack:(NSNotification *)notification {
+    NSDictionary *interuptionDict = notification.userInfo;
+    NSInteger interuptType = [[interuptionDict valueForKey:AVAudioSessionInterruptionTypeKey] integerValue];
+
+    switch (interuptType) {
+            // That interrupted the start, we should pause playback and collection
+        case AVAudioSessionInterruptionTypeBegan:{
+            [self.avPlayer pause];
+            NSLog(@"pause play when phone call or alarm ");
+            break;
+        }
+            // That interrupted the end, we can continue to play and capture
+        case AVAudioSessionInterruptionTypeEnded:{
+            break;
+        }
+        default:
+            break;
+    }
+}
+
 #pragma mark - Action
 
 - (IBAction)playAudio:(UIButton *)sender {
@@ -192,6 +277,17 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
     [self addAudioProgressObserve];
 }
 
+
+/**
+ *  This category type continue play or record on background mode
+ *  This category type interupt other app audio
+ *  support multi audio export
+ */
+- (IBAction)MultiRoute:(UIButton *)sender {
+    [self setAVAudioSessionCategory:AVAudioSessionCategoryMultiRoute options:AVAudioSessionCategoryOptionAllowBluetooth];
+    [self setSessionLabType:@"MultiRoute"];
+}
+
 /**
  *  Default - AVAudioSessionCategorySoloAmbient
  *  This category type will mute for the following situations:
@@ -201,7 +297,7 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
  *  This category type will interupt other app audio !!!
  */
 - (IBAction)SoloAmbient:(UIButton *)sender {
-    [self setAVAudioSessionCategory:AVAudioSessionCategorySoloAmbient];
+    [self setAVAudioSessionCategory:AVAudioSessionCategorySoloAmbient options:AVAudioSessionCategoryOptionMixWithOthers];
     [self setSessionLabType:@"SoloAmbient"];
 }
 
@@ -213,7 +309,7 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
  *  This category type not interupt other app audio !!!
  */
 - (IBAction)Ambient:(UIButton *)sender {
-    [self setAVAudioSessionCategory:AVAudioSessionCategoryAmbient];
+    [self setAVAudioSessionCategory:AVAudioSessionCategoryAmbient options:AVAudioSessionCategoryOptionMixWithOthers];
     [self setSessionLabType:@"Ambient"];
 }
 
@@ -222,7 +318,7 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
  *  This category type interupt other app audio
  */
 - (IBAction)Playback:(UIButton *)sender {
-    [self setAVAudioSessionCategory:AVAudioSessionCategoryPlayback];
+    [self setAVAudioSessionCategory:AVAudioSessionCategoryPlayback options:AVAudioSessionCategoryOptionMixWithOthers];
     [self setSessionLabType:@"Playback"];
 }
 
@@ -231,7 +327,7 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
  *  This category type will mute audio execpt for phone ring / alarm clock / calender remind etc.
  */
 - (IBAction)Record:(UIButton *)sender {
-    [self setAVAudioSessionCategory:AVAudioSessionCategoryRecord];
+    [self setAVAudioSessionCategory:AVAudioSessionCategoryRecord options:AVAudioSessionCategoryOptionMixWithOthers];
     [self setSessionLabType:@"Record"];
 }
 
@@ -240,7 +336,7 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
  *  This category type audio export is Handset by default
  */
 - (IBAction)PlayAndRecord:(UIButton *)sender {
-    [self setAVAudioSessionCategory:AVAudioSessionCategoryPlayAndRecord];
+    [self setAVAudioSessionCategory:AVAudioSessionCategoryPlayAndRecord options:AVAudioSessionCategoryOptionMixWithOthers];
     [self setSessionLabType:@"PlayAndRecord"];
 }
 
