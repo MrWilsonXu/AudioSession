@@ -25,7 +25,7 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
     VoicePlayStateError = 9
 };
 
-@interface ViewController ()
+@interface ViewController ()<AVAssetResourceLoaderDelegate>
 
 /**
  *  Play tool
@@ -75,6 +75,9 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
     } else {
         self.avPlayer = [AVPlayer playerWithPlayerItem:playerItem];
     }
+    if (@available(iOS 10.0, *)) {
+        self.avPlayer.automaticallyWaitsToMinimizeStalling = NO;
+    }
     
     [self setSessionLabType:@"SoloAmbient"];
     [self addAudioProgressObserve];
@@ -82,7 +85,9 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
 
 - (AVPlayerItem *)creatAVPlayerItemWithUrlStr:(NSString *)urlStr {
     NSURL *url = [NSURL URLWithString:urlStr];
-    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:url];
+    AVURLAsset *asset = [AVURLAsset URLAssetWithURL:url options:nil];
+    [asset.resourceLoader setDelegate:self queue:dispatch_get_main_queue()];
+    AVPlayerItem *playerItem = [AVPlayerItem playerItemWithAsset:asset];
     return playerItem;
 }
 
@@ -167,6 +172,11 @@ typedef NS_ENUM(NSUInteger, VoicePlayState){
  */
 - (void)setPlayButtonText:(NSString *)text {
     [self.playAction setTitle:text forState:UIControlStateNormal];
+}
+
+#pragma mark - delegate
+- (BOOL)resourceLoader:(AVAssetResourceLoader *)resourceLoader shouldWaitForLoadingOfRequestedResource:(AVAssetResourceLoadingRequest *)loadingRequest {
+    return YES;
 }
 
 #pragma mark - 监听 插／拔耳机

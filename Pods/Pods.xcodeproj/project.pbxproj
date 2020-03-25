@@ -1,0 +1,1034 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		018197F4005CFEA062A03EA8E945FD58 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4443BB127CADA3DCE2DE33D7D157C70B /* MobileCoreServices.framework */; };
+		0251886705CAA5AF738ED868208BF320 /* VIResourceLoaderManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7389BA021BCC70B5C5983F3FBBC88CA6 /* VIResourceLoaderManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08CFC1D7B045F6974066B938F7F3D0DC /* Pods-AudioPlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 205F306E0977817243D79485399BA7FE /* Pods-AudioPlay-dummy.m */; };
+		0906885C6267AF918F2984BABB547B5A /* Pods-AudioPlayUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C338FFCF71097D7E482E14690AB0F0 /* Pods-AudioPlayUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EED9A0441A3C2C7F06E7CAE7109535E /* VIMediaCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DCA4870289B7CF9707590BF1BBBE37B5 /* VIMediaCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17D6B42105908A702AF0F1130057084E /* VICacheManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E25596B4873E002487DEF544695C8D4 /* VICacheManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E5FA8D92A130B8C77922ACD428A206 /* Pods-AudioPlayTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C70B5B812FD7425816162D00ECE6391 /* Pods-AudioPlayTests-dummy.m */; };
+		26F70A54920695AEFBE016AAF49B3DFE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990F895E8C26023A89D8E832AAC8B85F /* AVFoundation.framework */; };
+		2FAAC1FE7EBFCBE00B55792BD1C0F769 /* VICacheSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 457F95D245EE74F17838A6C8E501EFB8 /* VICacheSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33A801F7111DA13721439CD78EB88402 /* VIMediaCacheWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = 3909DC11EEFB7FB7798BFB4ABEFC8B63 /* VIMediaCacheWorker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		349B972EAB55950B05A9CFC37EF894C9 /* VICacheConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2371CE984777868FCAC4BE6DB088C5EE /* VICacheConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		410BA1FC825FEE05C21351C2FB311F85 /* VICacheAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E322FA80E4CC5EAC1357F8982B559F1 /* VICacheAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B1BCC25CF0B3462AA1457401BE5AE7D /* VIResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = EF6FE4DD146838C2F5BB3760B50EBF39 /* VIResourceLoader.m */; };
+		4E1A96EEE03CABAF9231F28FA52946FE /* VIResourceLoadingRequestWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = FDBB6C54C7909E85CBC9309E9ACF121E /* VIResourceLoadingRequestWorker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54F609C31063F1B04D6A95D6193A243A /* VIMediaCacheWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E20CF71A58BD9C2190B0C16EEDD40A /* VIMediaCacheWorker.m */; };
+		640A97B223D5159DAFC57FBF4E7C02C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549087727F89EBFC54E95B1AFDEE46D3 /* Foundation.framework */; };
+		6C4B973CEF79104DA5EF517947AE8F4A /* VIMediaDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C61CEC54DA5D308C04CAD49D090355C /* VIMediaDownloader.m */; };
+		732969321E969013C3700FCE26B7481B /* Pods-AudioPlayUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2A9665D5254F8B238E751B1198B778 /* Pods-AudioPlayUITests-dummy.m */; };
+		73D538F86C1D8C4B7CED9A9B6F6887D5 /* VIMediaCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 180F1F3F8523DC67827E1898EDBDC3F4 /* VIMediaCache-dummy.m */; };
+		7B6C90FDA49DF4A1EABC18DB96D75BE2 /* VICacheSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B06B105A121F559BC9CDFB994365277C /* VICacheSessionManager.m */; };
+		7D31EDB183FFC2991C61C71D514EB1EE /* VICacheAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B8674FD58B931D7161C1BDD6D6AC8BF /* VICacheAction.m */; };
+		7F77B3781A403BBBF958B658B267B3D8 /* NSString+VIMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 64F5E5F20E85C02330597C1C2F432C93 /* NSString+VIMD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8455FE51ADCC821129ADBACC255B406D /* VICacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49CEAA36DF3A5B06D235FD9B900345CE /* VICacheManager.m */; };
+		8888B343653ECFEB2A1F346D468D7C7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549087727F89EBFC54E95B1AFDEE46D3 /* Foundation.framework */; };
+		8A15B92C7F37358E407D467C7E54745C /* VICacheConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 516614180270A4987F3DB541DDD00505 /* VICacheConfiguration.m */; };
+		8C8366614D7E21D3FA291174FF404565 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549087727F89EBFC54E95B1AFDEE46D3 /* Foundation.framework */; };
+		9D4D068C0CD694F7C4AF931EBF0DD479 /* VIResourceLoaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 424473967059F472889A8DCFC591196A /* VIResourceLoaderManager.m */; };
+		A1103492FEE069C9FC98FDC70D11EC6E /* VIResourceLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F3A079DE00C22D40EC43C284CB8B7D /* VIResourceLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A43A11F35C50F4936BB8F8A7915B0977 /* Pods-AudioPlayTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B5ADBD9B80511E45C7CEDBB02B4951 /* Pods-AudioPlayTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A71B8BA3B75DCA1856B44C2567AAFB4A /* VIMediaDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = B82B5A40B5249D40434C14B37E803E81 /* VIMediaDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A99E8D3842F25C9858F0D37459505169 /* VIContentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B50BB9B873D468A24E25B975955E0AE /* VIContentInfo.m */; };
+		AD5783E3CF853CE1A14613F18B565179 /* NSString+VIMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840FA931AD4B595B2347CB5AD1AF4EB /* NSString+VIMD5.m */; };
+		B0F7A22622A74F2FFF28A42A43F7C13F /* VIContentInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D826A4A325C6ECA205F74EE751C6D08 /* VIContentInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C465DF8E89479BF2200823BF87AE806F /* Pods-AudioPlay-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 098FDA8C36B1DCC0CC3A77FD962BDD7E /* Pods-AudioPlay-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CDB62CCC577A6E0469DB388518E14D18 /* VIResourceLoadingRequestWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = 39436CCC0F23713EB128F892BDB96955 /* VIResourceLoadingRequestWorker.m */; };
+		D7C79C56F9E51E513230F3F4B63ACE31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549087727F89EBFC54E95B1AFDEE46D3 /* Foundation.framework */; };
+		E7441293029A6C8DA26C3701E782FED3 /* VIMediaCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5257D2826BE884316C5B269890463ABE /* VIMediaCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88F5D645D0A8A3C0F0888A9AA01D4508 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A68762736925DD0878A6EAD366B1B05;
+			remoteInfo = "Pods-AudioPlay";
+		};
+		D47D97FF809E99074E941E7DAC3BA7C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D4C334AFB35FC30A61CCABB5635EADF;
+			remoteInfo = VIMediaCache;
+		};
+		E8F5B8B72B3DD10DA1A16068720DB00A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A68762736925DD0878A6EAD366B1B05;
+			remoteInfo = "Pods-AudioPlay";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06C50896063116237A058E59F9A80725 /* Pods-AudioPlayTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioPlayTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		098FDA8C36B1DCC0CC3A77FD962BDD7E /* Pods-AudioPlay-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AudioPlay-umbrella.h"; sourceTree = "<group>"; };
+		0A6483B117FDB58A932BC841E0ED2324 /* Pods-AudioPlay.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AudioPlay.modulemap"; sourceTree = "<group>"; };
+		13A37EE10BDD10EB4AAD9E8E9BA25BE4 /* VIMediaCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = VIMediaCache.modulemap; sourceTree = "<group>"; };
+		16C338FFCF71097D7E482E14690AB0F0 /* Pods-AudioPlayUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AudioPlayUITests-umbrella.h"; sourceTree = "<group>"; };
+		180F1F3F8523DC67827E1898EDBDC3F4 /* VIMediaCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VIMediaCache-dummy.m"; sourceTree = "<group>"; };
+		1B50BB9B873D468A24E25B975955E0AE /* VIContentInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VIContentInfo.m; path = VIMediaCache/ResourceLoader/VIContentInfo.m; sourceTree = "<group>"; };
+		1B614091CC30E31E6D2D2B85D651A96F /* Pods_AudioPlayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AudioPlayTests.framework; path = "Pods-AudioPlayTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E25596B4873E002487DEF544695C8D4 /* VICacheManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VICacheManager.h; path = VIMediaCache/Cache/VICacheManager.h; sourceTree = "<group>"; };
+		1E322FA80E4CC5EAC1357F8982B559F1 /* VICacheAction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VICacheAction.h; path = VIMediaCache/Cache/VICacheAction.h; sourceTree = "<group>"; };
+		1E623E376B852715167FA28ACB0A9EF6 /* Pods-AudioPlayTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AudioPlayTests.modulemap"; sourceTree = "<group>"; };
+		205F306E0977817243D79485399BA7FE /* Pods-AudioPlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioPlay-dummy.m"; sourceTree = "<group>"; };
+		22AB727D6C118B413881A919BC9FEC85 /* Pods-AudioPlayUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioPlayUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2371CE984777868FCAC4BE6DB088C5EE /* VICacheConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VICacheConfiguration.h; path = VIMediaCache/Cache/VICacheConfiguration.h; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2E2A9665D5254F8B238E751B1198B778 /* Pods-AudioPlayUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioPlayUITests-dummy.m"; sourceTree = "<group>"; };
+		2E5FCD735458936163D9FEEB550B356A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		336B6E88B0A950461A8AA543205C191B /* Pods-AudioPlayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioPlayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3652A21169011972144DF1C5133FF672 /* Pods-AudioPlayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioPlayUITests.release.xcconfig"; sourceTree = "<group>"; };
+		36B5ADBD9B80511E45C7CEDBB02B4951 /* Pods-AudioPlayTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AudioPlayTests-umbrella.h"; sourceTree = "<group>"; };
+		3909DC11EEFB7FB7798BFB4ABEFC8B63 /* VIMediaCacheWorker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VIMediaCacheWorker.h; path = VIMediaCache/Cache/VIMediaCacheWorker.h; sourceTree = "<group>"; };
+		39436CCC0F23713EB128F892BDB96955 /* VIResourceLoadingRequestWorker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VIResourceLoadingRequestWorker.m; path = VIMediaCache/ResourceLoader/VIResourceLoadingRequestWorker.m; sourceTree = "<group>"; };
+		3D826A4A325C6ECA205F74EE751C6D08 /* VIContentInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VIContentInfo.h; path = VIMediaCache/ResourceLoader/VIContentInfo.h; sourceTree = "<group>"; };
+		424473967059F472889A8DCFC591196A /* VIResourceLoaderManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VIResourceLoaderManager.m; path = VIMediaCache/ResourceLoader/VIResourceLoaderManager.m; sourceTree = "<group>"; };
+		43FBD28306999C4CC6DE497FDFCE190B /* Pods-AudioPlayUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioPlayUITests-resources.sh"; sourceTree = "<group>"; };
+		4443BB127CADA3DCE2DE33D7D157C70B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		457F95D245EE74F17838A6C8E501EFB8 /* VICacheSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VICacheSessionManager.h; path = VIMediaCache/Cache/VICacheSessionManager.h; sourceTree = "<group>"; };
+		49CEAA36DF3A5B06D235FD9B900345CE /* VICacheManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VICacheManager.m; path = VIMediaCache/Cache/VICacheManager.m; sourceTree = "<group>"; };
+		4C70B5B812FD7425816162D00ECE6391 /* Pods-AudioPlayTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AudioPlayTests-dummy.m"; sourceTree = "<group>"; };
+		516614180270A4987F3DB541DDD00505 /* VICacheConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VICacheConfiguration.m; path = VIMediaCache/Cache/VICacheConfiguration.m; sourceTree = "<group>"; };
+		5257D2826BE884316C5B269890463ABE /* VIMediaCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VIMediaCache-umbrella.h"; sourceTree = "<group>"; };
+		528F08E00D53EC2945A736FCC6A4BC79 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		549087727F89EBFC54E95B1AFDEE46D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5AC2ADCACA871FCE8258561B97EDB0BD /* Pods-AudioPlayUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioPlayUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F06F92F2695CF4E2B7C74FDC40305BE /* Pods-AudioPlay-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioPlay-resources.sh"; sourceTree = "<group>"; };
+		64F5E5F20E85C02330597C1C2F432C93 /* NSString+VIMD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+VIMD5.h"; path = "VIMediaCache/Cache/NSString+VIMD5.h"; sourceTree = "<group>"; };
+		68E20CF71A58BD9C2190B0C16EEDD40A /* VIMediaCacheWorker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VIMediaCacheWorker.m; path = VIMediaCache/Cache/VIMediaCacheWorker.m; sourceTree = "<group>"; };
+		6926A3E9F15C3C6CDAE005D7120F999B /* Pods-AudioPlay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioPlay-acknowledgements.plist"; sourceTree = "<group>"; };
+		69A67F0D3D0117B672A7F00CF17E8030 /* Pods-AudioPlayUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioPlayUITests-frameworks.sh"; sourceTree = "<group>"; };
+		7389BA021BCC70B5C5983F3FBBC88CA6 /* VIResourceLoaderManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VIResourceLoaderManager.h; path = VIMediaCache/ResourceLoader/VIResourceLoaderManager.h; sourceTree = "<group>"; };
+		7840FA931AD4B595B2347CB5AD1AF4EB /* NSString+VIMD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+VIMD5.m"; path = "VIMediaCache/Cache/NSString+VIMD5.m"; sourceTree = "<group>"; };
+		87A5E1385E66DDEA3265458A98CC6BBD /* Pods-AudioPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		8B225CA27C5CD7A8456E5CD50722353A /* Pods-AudioPlayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioPlayTests.release.xcconfig"; sourceTree = "<group>"; };
+		8C61CEC54DA5D308C04CAD49D090355C /* VIMediaDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VIMediaDownloader.m; path = VIMediaCache/ResourceLoader/VIMediaDownloader.m; sourceTree = "<group>"; };
+		92B2013A3D18F5B03243CF7E3FF6C2D7 /* Pods-AudioPlayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioPlayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		990F895E8C26023A89D8E832AAC8B85F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		9B8674FD58B931D7161C1BDD6D6AC8BF /* VICacheAction.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VICacheAction.m; path = VIMediaCache/Cache/VICacheAction.m; sourceTree = "<group>"; };
+		A3AAA1B386DF8B9BBB5EA3C4E292E1D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B06B105A121F559BC9CDFB994365277C /* VICacheSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VICacheSessionManager.m; path = VIMediaCache/Cache/VICacheSessionManager.m; sourceTree = "<group>"; };
+		B6F172759EE5CD99906FC56041340D07 /* Pods_AudioPlayUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AudioPlayUITests.framework; path = "Pods-AudioPlayUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B82B5A40B5249D40434C14B37E803E81 /* VIMediaDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VIMediaDownloader.h; path = VIMediaCache/ResourceLoader/VIMediaDownloader.h; sourceTree = "<group>"; };
+		C12085ECC9D182C3D7C63E583B7C3C2F /* Pods_AudioPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AudioPlay.framework; path = "Pods-AudioPlay.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5635A6F029730FFEE856323F197A4E9 /* Pods-AudioPlayTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AudioPlayTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DCA4870289B7CF9707590BF1BBBE37B5 /* VIMediaCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VIMediaCache.h; path = VIMediaCache/VIMediaCache.h; sourceTree = "<group>"; };
+		DD0077637761E96417A410FEDB653DEA /* Pods-AudioPlay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AudioPlay-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1FDB74F727D9CEE9739DF03A88F6C10 /* Pods-AudioPlayUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AudioPlayUITests.modulemap"; sourceTree = "<group>"; };
+		E412D786F42BEB77CA6BE71B43C37959 /* Pods-AudioPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AudioPlay.release.xcconfig"; sourceTree = "<group>"; };
+		E5F3A079DE00C22D40EC43C284CB8B7D /* VIResourceLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VIResourceLoader.h; path = VIMediaCache/ResourceLoader/VIResourceLoader.h; sourceTree = "<group>"; };
+		E6E0DBD1ADBE305CF92CE01D8B6C3A5F /* VIMediaCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = VIMediaCache.framework; path = VIMediaCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDC3A1CD350BB6C6934CF32D6A00DD65 /* Pods-AudioPlayTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioPlayTests-resources.sh"; sourceTree = "<group>"; };
+		EF6FE4DD146838C2F5BB3760B50EBF39 /* VIResourceLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VIResourceLoader.m; path = VIMediaCache/ResourceLoader/VIResourceLoader.m; sourceTree = "<group>"; };
+		F3C47687CAC8CF069B7F61DFE7D88709 /* Pods-AudioPlay-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioPlay-frameworks.sh"; sourceTree = "<group>"; };
+		FD3642A27E030B2D6E014FDC2E50DC2A /* Pods-AudioPlayTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AudioPlayTests-frameworks.sh"; sourceTree = "<group>"; };
+		FD625222E3E516C90649E570DBB6A2B6 /* VIMediaCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VIMediaCache.xcconfig; sourceTree = "<group>"; };
+		FDBB6C54C7909E85CBC9309E9ACF121E /* VIResourceLoadingRequestWorker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VIResourceLoadingRequestWorker.h; path = VIMediaCache/ResourceLoader/VIResourceLoadingRequestWorker.h; sourceTree = "<group>"; };
+		FE696081E339D44CCA2DBFE065CC5661 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF92CE2614CF64853AA3DD75ACF6F371 /* VIMediaCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VIMediaCache-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2713B58BDF68C9BDF2D87544E38576CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F70A54920695AEFBE016AAF49B3DFE /* AVFoundation.framework in Frameworks */,
+				8C8366614D7E21D3FA291174FF404565 /* Foundation.framework in Frameworks */,
+				018197F4005CFEA062A03EA8E945FD58 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36F943D762B5BD39F2B0B90CA148FFF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7C79C56F9E51E513230F3F4B63ACE31 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5E99468E944B6B5520059E39C29428E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8888B343653ECFEB2A1F346D468D7C7C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEF3063FC8203F6BB62ABFA09F033B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				640A97B223D5159DAFC57FBF4E7C02C0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7325D180300399D1283947E0D624C7E9 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08E9A578439750C40C170B041A31EC3C /* Pods-AudioPlay */ = {
+			isa = PBXGroup;
+			children = (
+				2E5FCD735458936163D9FEEB550B356A /* Info.plist */,
+				0A6483B117FDB58A932BC841E0ED2324 /* Pods-AudioPlay.modulemap */,
+				DD0077637761E96417A410FEDB653DEA /* Pods-AudioPlay-acknowledgements.markdown */,
+				6926A3E9F15C3C6CDAE005D7120F999B /* Pods-AudioPlay-acknowledgements.plist */,
+				205F306E0977817243D79485399BA7FE /* Pods-AudioPlay-dummy.m */,
+				F3C47687CAC8CF069B7F61DFE7D88709 /* Pods-AudioPlay-frameworks.sh */,
+				5F06F92F2695CF4E2B7C74FDC40305BE /* Pods-AudioPlay-resources.sh */,
+				098FDA8C36B1DCC0CC3A77FD962BDD7E /* Pods-AudioPlay-umbrella.h */,
+				87A5E1385E66DDEA3265458A98CC6BBD /* Pods-AudioPlay.debug.xcconfig */,
+				E412D786F42BEB77CA6BE71B43C37959 /* Pods-AudioPlay.release.xcconfig */,
+			);
+			name = "Pods-AudioPlay";
+			path = "Target Support Files/Pods-AudioPlay";
+			sourceTree = "<group>";
+		};
+		515572FBC890358BFE01717AAAC4AE4E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3AAA1B386DF8B9BBB5EA3C4E292E1D3 /* Info.plist */,
+				13A37EE10BDD10EB4AAD9E8E9BA25BE4 /* VIMediaCache.modulemap */,
+				FD625222E3E516C90649E570DBB6A2B6 /* VIMediaCache.xcconfig */,
+				180F1F3F8523DC67827E1898EDBDC3F4 /* VIMediaCache-dummy.m */,
+				FF92CE2614CF64853AA3DD75ACF6F371 /* VIMediaCache-prefix.pch */,
+				5257D2826BE884316C5B269890463ABE /* VIMediaCache-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VIMediaCache";
+			sourceTree = "<group>";
+		};
+		7325D180300399D1283947E0D624C7E9 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				990F895E8C26023A89D8E832AAC8B85F /* AVFoundation.framework */,
+				549087727F89EBFC54E95B1AFDEE46D3 /* Foundation.framework */,
+				4443BB127CADA3DCE2DE33D7D157C70B /* MobileCoreServices.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		91A72AD3BAE7D5D0EB4293090DF7A0FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D276ECE687F800AD6622CB71837B8B8D /* VIMediaCache */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA06BD124392EB4055542C5866CEB413 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08E9A578439750C40C170B041A31EC3C /* Pods-AudioPlay */,
+				E20B632B7F60B5D740D3E6B9A3BE5FAE /* Pods-AudioPlayTests */,
+				F84DE392E82D6BAA59A488B19DB9E51D /* Pods-AudioPlayUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				91A72AD3BAE7D5D0EB4293090DF7A0FC /* Pods */,
+				F7CA03CC462906C3E079BDC3B56E7FFE /* Products */,
+				CA06BD124392EB4055542C5866CEB413 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D276ECE687F800AD6622CB71837B8B8D /* VIMediaCache */ = {
+			isa = PBXGroup;
+			children = (
+				64F5E5F20E85C02330597C1C2F432C93 /* NSString+VIMD5.h */,
+				7840FA931AD4B595B2347CB5AD1AF4EB /* NSString+VIMD5.m */,
+				1E322FA80E4CC5EAC1357F8982B559F1 /* VICacheAction.h */,
+				9B8674FD58B931D7161C1BDD6D6AC8BF /* VICacheAction.m */,
+				2371CE984777868FCAC4BE6DB088C5EE /* VICacheConfiguration.h */,
+				516614180270A4987F3DB541DDD00505 /* VICacheConfiguration.m */,
+				1E25596B4873E002487DEF544695C8D4 /* VICacheManager.h */,
+				49CEAA36DF3A5B06D235FD9B900345CE /* VICacheManager.m */,
+				457F95D245EE74F17838A6C8E501EFB8 /* VICacheSessionManager.h */,
+				B06B105A121F559BC9CDFB994365277C /* VICacheSessionManager.m */,
+				3D826A4A325C6ECA205F74EE751C6D08 /* VIContentInfo.h */,
+				1B50BB9B873D468A24E25B975955E0AE /* VIContentInfo.m */,
+				DCA4870289B7CF9707590BF1BBBE37B5 /* VIMediaCache.h */,
+				3909DC11EEFB7FB7798BFB4ABEFC8B63 /* VIMediaCacheWorker.h */,
+				68E20CF71A58BD9C2190B0C16EEDD40A /* VIMediaCacheWorker.m */,
+				B82B5A40B5249D40434C14B37E803E81 /* VIMediaDownloader.h */,
+				8C61CEC54DA5D308C04CAD49D090355C /* VIMediaDownloader.m */,
+				E5F3A079DE00C22D40EC43C284CB8B7D /* VIResourceLoader.h */,
+				EF6FE4DD146838C2F5BB3760B50EBF39 /* VIResourceLoader.m */,
+				7389BA021BCC70B5C5983F3FBBC88CA6 /* VIResourceLoaderManager.h */,
+				424473967059F472889A8DCFC591196A /* VIResourceLoaderManager.m */,
+				FDBB6C54C7909E85CBC9309E9ACF121E /* VIResourceLoadingRequestWorker.h */,
+				39436CCC0F23713EB128F892BDB96955 /* VIResourceLoadingRequestWorker.m */,
+				515572FBC890358BFE01717AAAC4AE4E /* Support Files */,
+			);
+			name = VIMediaCache;
+			path = VIMediaCache;
+			sourceTree = "<group>";
+		};
+		E20B632B7F60B5D740D3E6B9A3BE5FAE /* Pods-AudioPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				FE696081E339D44CCA2DBFE065CC5661 /* Info.plist */,
+				1E623E376B852715167FA28ACB0A9EF6 /* Pods-AudioPlayTests.modulemap */,
+				06C50896063116237A058E59F9A80725 /* Pods-AudioPlayTests-acknowledgements.markdown */,
+				C5635A6F029730FFEE856323F197A4E9 /* Pods-AudioPlayTests-acknowledgements.plist */,
+				4C70B5B812FD7425816162D00ECE6391 /* Pods-AudioPlayTests-dummy.m */,
+				FD3642A27E030B2D6E014FDC2E50DC2A /* Pods-AudioPlayTests-frameworks.sh */,
+				EDC3A1CD350BB6C6934CF32D6A00DD65 /* Pods-AudioPlayTests-resources.sh */,
+				36B5ADBD9B80511E45C7CEDBB02B4951 /* Pods-AudioPlayTests-umbrella.h */,
+				336B6E88B0A950461A8AA543205C191B /* Pods-AudioPlayTests.debug.xcconfig */,
+				8B225CA27C5CD7A8456E5CD50722353A /* Pods-AudioPlayTests.release.xcconfig */,
+			);
+			name = "Pods-AudioPlayTests";
+			path = "Target Support Files/Pods-AudioPlayTests";
+			sourceTree = "<group>";
+		};
+		F7CA03CC462906C3E079BDC3B56E7FFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C12085ECC9D182C3D7C63E583B7C3C2F /* Pods_AudioPlay.framework */,
+				1B614091CC30E31E6D2D2B85D651A96F /* Pods_AudioPlayTests.framework */,
+				B6F172759EE5CD99906FC56041340D07 /* Pods_AudioPlayUITests.framework */,
+				E6E0DBD1ADBE305CF92CE01D8B6C3A5F /* VIMediaCache.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F84DE392E82D6BAA59A488B19DB9E51D /* Pods-AudioPlayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				528F08E00D53EC2945A736FCC6A4BC79 /* Info.plist */,
+				E1FDB74F727D9CEE9739DF03A88F6C10 /* Pods-AudioPlayUITests.modulemap */,
+				5AC2ADCACA871FCE8258561B97EDB0BD /* Pods-AudioPlayUITests-acknowledgements.markdown */,
+				22AB727D6C118B413881A919BC9FEC85 /* Pods-AudioPlayUITests-acknowledgements.plist */,
+				2E2A9665D5254F8B238E751B1198B778 /* Pods-AudioPlayUITests-dummy.m */,
+				69A67F0D3D0117B672A7F00CF17E8030 /* Pods-AudioPlayUITests-frameworks.sh */,
+				43FBD28306999C4CC6DE497FDFCE190B /* Pods-AudioPlayUITests-resources.sh */,
+				16C338FFCF71097D7E482E14690AB0F0 /* Pods-AudioPlayUITests-umbrella.h */,
+				92B2013A3D18F5B03243CF7E3FF6C2D7 /* Pods-AudioPlayUITests.debug.xcconfig */,
+				3652A21169011972144DF1C5133FF672 /* Pods-AudioPlayUITests.release.xcconfig */,
+			);
+			name = "Pods-AudioPlayUITests";
+			path = "Target Support Files/Pods-AudioPlayUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		319A856C53AAF97FF35279C8D8C44A89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0906885C6267AF918F2984BABB547B5A /* Pods-AudioPlayUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AD8F77A0DD080CA1DF515906FC82A22 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C465DF8E89479BF2200823BF87AE806F /* Pods-AudioPlay-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F14C41572B7645E12A42E53762C1D40 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43A11F35C50F4936BB8F8A7915B0977 /* Pods-AudioPlayTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB777E918D9ACA26C33E754CA3CCCEEE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F77B3781A403BBBF958B658B267B3D8 /* NSString+VIMD5.h in Headers */,
+				410BA1FC825FEE05C21351C2FB311F85 /* VICacheAction.h in Headers */,
+				349B972EAB55950B05A9CFC37EF894C9 /* VICacheConfiguration.h in Headers */,
+				17D6B42105908A702AF0F1130057084E /* VICacheManager.h in Headers */,
+				2FAAC1FE7EBFCBE00B55792BD1C0F769 /* VICacheSessionManager.h in Headers */,
+				B0F7A22622A74F2FFF28A42A43F7C13F /* VIContentInfo.h in Headers */,
+				E7441293029A6C8DA26C3701E782FED3 /* VIMediaCache-umbrella.h in Headers */,
+				0EED9A0441A3C2C7F06E7CAE7109535E /* VIMediaCache.h in Headers */,
+				33A801F7111DA13721439CD78EB88402 /* VIMediaCacheWorker.h in Headers */,
+				A71B8BA3B75DCA1856B44C2567AAFB4A /* VIMediaDownloader.h in Headers */,
+				A1103492FEE069C9FC98FDC70D11EC6E /* VIResourceLoader.h in Headers */,
+				0251886705CAA5AF738ED868208BF320 /* VIResourceLoaderManager.h in Headers */,
+				4E1A96EEE03CABAF9231F28FA52946FE /* VIResourceLoadingRequestWorker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		09619470061621BBADEBF081D53397D2 /* Pods-AudioPlayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5D8064BED767121E98E62AAD2537CA5 /* Build configuration list for PBXNativeTarget "Pods-AudioPlayUITests" */;
+			buildPhases = (
+				319A856C53AAF97FF35279C8D8C44A89 /* Headers */,
+				3BF692FBB04111D0E8D330FBAB6B1AF6 /* Sources */,
+				5E99468E944B6B5520059E39C29428E4 /* Frameworks */,
+				F915B69E3824FB609B37348D42FB926D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36DE58E77EA306541266ABAD5255AC7C /* PBXTargetDependency */,
+			);
+			name = "Pods-AudioPlayUITests";
+			productName = "Pods-AudioPlayUITests";
+			productReference = B6F172759EE5CD99906FC56041340D07 /* Pods_AudioPlayUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1A68762736925DD0878A6EAD366B1B05 /* Pods-AudioPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43CF13DD04035426E5673949A220A497 /* Build configuration list for PBXNativeTarget "Pods-AudioPlay" */;
+			buildPhases = (
+				3AD8F77A0DD080CA1DF515906FC82A22 /* Headers */,
+				FB749FA2B3A7B806E326ABE48271DF28 /* Sources */,
+				36F943D762B5BD39F2B0B90CA148FFF5 /* Frameworks */,
+				DA4BFDF87FD787A8F642C5A9AB22770F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E47A124729886DCEDBA6A28C749F4E39 /* PBXTargetDependency */,
+			);
+			name = "Pods-AudioPlay";
+			productName = "Pods-AudioPlay";
+			productReference = C12085ECC9D182C3D7C63E583B7C3C2F /* Pods_AudioPlay.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3215143CB2674DE00FB703FE2FD82C7C /* Pods-AudioPlayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B73D2675032A03276FFB3BF291C6AB7 /* Build configuration list for PBXNativeTarget "Pods-AudioPlayTests" */;
+			buildPhases = (
+				9F14C41572B7645E12A42E53762C1D40 /* Headers */,
+				60B9DE1A84DF43E1026AD02B1CC8EC43 /* Sources */,
+				CEF3063FC8203F6BB62ABFA09F033B4A /* Frameworks */,
+				3D80F2EEC893F54585C1A3CD011254BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				11B0D587219107B3B50182B3ED9A6CCE /* PBXTargetDependency */,
+			);
+			name = "Pods-AudioPlayTests";
+			productName = "Pods-AudioPlayTests";
+			productReference = 1B614091CC30E31E6D2D2B85D651A96F /* Pods_AudioPlayTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3D4C334AFB35FC30A61CCABB5635EADF /* VIMediaCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC29D3C474DB9E1A5BA53C5E0CFC675F /* Build configuration list for PBXNativeTarget "VIMediaCache" */;
+			buildPhases = (
+				BB777E918D9ACA26C33E754CA3CCCEEE /* Headers */,
+				9C9FE2FEEC7FDA642A42CFA2E89A4032 /* Sources */,
+				2713B58BDF68C9BDF2D87544E38576CC /* Frameworks */,
+				2B1D34D1F34F93CEAF4818C59CF21690 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VIMediaCache;
+			productName = VIMediaCache;
+			productReference = E6E0DBD1ADBE305CF92CE01D8B6C3A5F /* VIMediaCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F7CA03CC462906C3E079BDC3B56E7FFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A68762736925DD0878A6EAD366B1B05 /* Pods-AudioPlay */,
+				3215143CB2674DE00FB703FE2FD82C7C /* Pods-AudioPlayTests */,
+				09619470061621BBADEBF081D53397D2 /* Pods-AudioPlayUITests */,
+				3D4C334AFB35FC30A61CCABB5635EADF /* VIMediaCache */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B1D34D1F34F93CEAF4818C59CF21690 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D80F2EEC893F54585C1A3CD011254BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA4BFDF87FD787A8F642C5A9AB22770F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F915B69E3824FB609B37348D42FB926D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BF692FBB04111D0E8D330FBAB6B1AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732969321E969013C3700FCE26B7481B /* Pods-AudioPlayUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60B9DE1A84DF43E1026AD02B1CC8EC43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19E5FA8D92A130B8C77922ACD428A206 /* Pods-AudioPlayTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C9FE2FEEC7FDA642A42CFA2E89A4032 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5783E3CF853CE1A14613F18B565179 /* NSString+VIMD5.m in Sources */,
+				7D31EDB183FFC2991C61C71D514EB1EE /* VICacheAction.m in Sources */,
+				8A15B92C7F37358E407D467C7E54745C /* VICacheConfiguration.m in Sources */,
+				8455FE51ADCC821129ADBACC255B406D /* VICacheManager.m in Sources */,
+				7B6C90FDA49DF4A1EABC18DB96D75BE2 /* VICacheSessionManager.m in Sources */,
+				A99E8D3842F25C9858F0D37459505169 /* VIContentInfo.m in Sources */,
+				73D538F86C1D8C4B7CED9A9B6F6887D5 /* VIMediaCache-dummy.m in Sources */,
+				54F609C31063F1B04D6A95D6193A243A /* VIMediaCacheWorker.m in Sources */,
+				6C4B973CEF79104DA5EF517947AE8F4A /* VIMediaDownloader.m in Sources */,
+				4B1BCC25CF0B3462AA1457401BE5AE7D /* VIResourceLoader.m in Sources */,
+				9D4D068C0CD694F7C4AF931EBF0DD479 /* VIResourceLoaderManager.m in Sources */,
+				CDB62CCC577A6E0469DB388518E14D18 /* VIResourceLoadingRequestWorker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB749FA2B3A7B806E326ABE48271DF28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CFC1D7B045F6974066B938F7F3D0DC /* Pods-AudioPlay-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		11B0D587219107B3B50182B3ED9A6CCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AudioPlay";
+			target = 1A68762736925DD0878A6EAD366B1B05 /* Pods-AudioPlay */;
+			targetProxy = E8F5B8B72B3DD10DA1A16068720DB00A /* PBXContainerItemProxy */;
+		};
+		36DE58E77EA306541266ABAD5255AC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AudioPlay";
+			target = 1A68762736925DD0878A6EAD366B1B05 /* Pods-AudioPlay */;
+			targetProxy = 88F5D645D0A8A3C0F0888A9AA01D4508 /* PBXContainerItemProxy */;
+		};
+		E47A124729886DCEDBA6A28C749F4E39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VIMediaCache;
+			target = 3D4C334AFB35FC30A61CCABB5635EADF /* VIMediaCache */;
+			targetProxy = D47D97FF809E99074E941E7DAC3BA7C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3A3A0E755C40681DEB6C09BE936A351E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD625222E3E516C90649E570DBB6A2B6 /* VIMediaCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VIMediaCache/VIMediaCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VIMediaCache/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VIMediaCache/VIMediaCache.modulemap";
+				PRODUCT_MODULE_NAME = VIMediaCache;
+				PRODUCT_NAME = VIMediaCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F89B53877C7B8829EA3B1952DE00045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92B2013A3D18F5B03243CF7E3FF6C2D7 /* Pods-AudioPlayUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioPlayUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioPlayUITests/Pods-AudioPlayUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4841C73C7CD3F4141471F845F02923BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B225CA27C5CD7A8456E5CD50722353A /* Pods-AudioPlayTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioPlayTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioPlayTests/Pods-AudioPlayTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		712CD3A63291C1364ECCDBCC671E1216 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A5E1385E66DDEA3265458A98CC6BBD /* Pods-AudioPlay.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioPlay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioPlay/Pods-AudioPlay.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC43BFE2C046BA052669EFD4B3BC0820 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C21813649BD626E3EB5533772EC5C07B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D3226395A30701A250B13B90019C6D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 336B6E88B0A950461A8AA543205C191B /* Pods-AudioPlayTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioPlayTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioPlayTests/Pods-AudioPlayTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DFB6752AF1BA2A9D8329C5E779F78597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E412D786F42BEB77CA6BE71B43C37959 /* Pods-AudioPlay.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioPlay/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioPlay/Pods-AudioPlay.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7346C262FD9CB23E3C6D43C4973C669 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD625222E3E516C90649E570DBB6A2B6 /* VIMediaCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/VIMediaCache/VIMediaCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/VIMediaCache/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/VIMediaCache/VIMediaCache.modulemap";
+				PRODUCT_MODULE_NAME = VIMediaCache;
+				PRODUCT_NAME = VIMediaCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FD8C245C9B92F14A6161BBAD919F07BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3652A21169011972144DF1C5133FF672 /* Pods-AudioPlayUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AudioPlayUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AudioPlayUITests/Pods-AudioPlayUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B73D2675032A03276FFB3BF291C6AB7 /* Build configuration list for PBXNativeTarget "Pods-AudioPlayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3226395A30701A250B13B90019C6D62 /* Debug */,
+				4841C73C7CD3F4141471F845F02923BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43CF13DD04035426E5673949A220A497 /* Build configuration list for PBXNativeTarget "Pods-AudioPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				712CD3A63291C1364ECCDBCC671E1216 /* Debug */,
+				DFB6752AF1BA2A9D8329C5E779F78597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC43BFE2C046BA052669EFD4B3BC0820 /* Debug */,
+				C21813649BD626E3EB5533772EC5C07B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5D8064BED767121E98E62AAD2537CA5 /* Build configuration list for PBXNativeTarget "Pods-AudioPlayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F89B53877C7B8829EA3B1952DE00045 /* Debug */,
+				FD8C245C9B92F14A6161BBAD919F07BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC29D3C474DB9E1A5BA53C5E0CFC675F /* Build configuration list for PBXNativeTarget "VIMediaCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7346C262FD9CB23E3C6D43C4973C669 /* Debug */,
+				3A3A0E755C40681DEB6C09BE936A351E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
